@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "vite": "^5.3.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
